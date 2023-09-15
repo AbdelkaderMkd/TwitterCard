@@ -1,0 +1,65 @@
+.container {
+  width: 500px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.avatarPlaceholder {
+  width: 192px;
+  height: 192px;
+  background-color: #e0e0e0;
+}
+
+.content {
+  padding: 8px;
+  width: 100%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.grayText {
+  color: gray;
+}
+
+.iconCount {
+  margin-left: 5px;
+}
+
+.timestamp {
+  color: gray;
+}
+
+.iconHoverEffect {
+  color: '#f91880';
+  transition: transform 0.3s ease-in-out;
+}
+
+.iconHoverEffect:hover {
+  color: '#f91880';
+  transform: scale(1.1);
+}
+
+/* Add to your styles.module.css */
+@keyframes heartPop {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.liked {
+  animation: heartPop 0.3s ease-in-out forwards;
+}
